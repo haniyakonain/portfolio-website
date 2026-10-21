@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.page {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  margin-right: 32px;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+/* Circular photo placeholder. To use a real photo, replace the div with
+   <img class="photo" src="photo.jpg" alt="Jane Doe">. */
+.photo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #ddd;
+  color: #555;
+  text-align: center;
+  line-height: 150px;
+  font-size: 14px;
+  object-fit: cover;
+}
+
+.sidebar p {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.sidebar .name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 12px 0 4px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.menu li {
+  margin-bottom: 4px;
+}
+
+.menu .gap {
+  margin-top: 14px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-size: 19px;
+  margin: 28px 0 8px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+ul {
+  margin: 0 0 10px;
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+ul.plain {
+  list-style: none;
+  padding-left: 0;
+}
+
+.announce {
+  color: #c00;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .page {
+    display: block;
+  }
+
+  .sidebar {
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .photo {
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    margin: 0 auto;
+  }
+}
